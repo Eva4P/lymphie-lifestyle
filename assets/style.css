@@ -1,10 +1,46 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
 
+/* CSS Variables */
+:root {
+    --primary-font: "Sansita", sans-serif;
+    --secondary-font: "Lato", cursive;
+    --primary-color: #48586a; /* dark grey */
+    --secondary-color: #d24858; /* light pink */
+    --highlight-color: #6d8e87; /* green */
+    --highlight-color-light: #c4bee4; /* light purple */
+}
+/* Global styles */
+
 body {
-    font-family: "Sansita", sans-serif;
+    font-family: var(--primary-font);
 }
 
-h1 {
-    font-family: "Lato", cursive;
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
+/* Let's move section */
+
+#Lets move {
+    background-color: white;
+}
+
+/* Let's eat section */
+
+#Lets eat {
+    background-color: #dbdcde; /* light grey */
+}
+
+/* Contact section */
+
+#contact {
+    background-color: white;
 }
